@@ -1,0 +1,30 @@
+name: Missing public record
+description: Suggest a source-backed public record for review.
+title: '[Missing record] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Public submissions are review leads. Do not submit sensitive or private data. A missing portal record does not establish that no public record exists.'
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or topic
+    validations:
+      required: true
+  - type: input
+    id: source-page
+    attributes:
+      label: Related portal URL
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence URL
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: Published record and coverage
+      description: Include publisher, publication date and jurisdiction where available. Do not infer missing values.
+    validations:
+      required: true

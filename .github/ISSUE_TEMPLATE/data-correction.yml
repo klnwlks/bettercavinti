@@ -1,0 +1,38 @@
+name: Data correction
+description: Propose a source-backed correction to a published record.
+title: '[Data] '
+body:
+  - type: markdown
+    attributes:
+      value: 'This is a public review queue, not an immediate edit. Do not include private contacts, patient details, household data or other sensitive information.'
+  - type: input
+    id: record
+    attributes:
+      label: Record ID
+      description: Copy the stable record ID or source ID from the portal.
+    validations:
+      required: true
+  - type: input
+    id: source-page
+    attributes:
+      label: Portal record URL
+  - type: input
+    id: field
+    attributes:
+      label: Field to correct
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-value
+    attributes:
+      label: Proposed value
+      description: Preserve the publisher's exact wording, units and reference period.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence URL
+      description: Link directly to the primary record where possible.
+    validations:
+      required: true

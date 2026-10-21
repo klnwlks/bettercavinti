@@ -1,0 +1,45 @@
+name: Project observation
+description: Submit public evidence for repository review, without changing published progress.
+title: '[Project observation] '
+body:
+  - type: markdown
+    attributes:
+      value: 'This issue is public. Submit only lawfully shared public evidence; no private people, household details or sensitive locations. Observations never overwrite official project progress automatically. If no published project ID exists, cite the official identifier and evidence rather than inventing a portal ID.'
+  - type: input
+    id: record
+    attributes:
+      label: Project ID
+    validations:
+      required: true
+  - type: input
+    id: source-page
+    attributes:
+      label: Related portal or official project URL
+  - type: input
+    id: observation-time
+    attributes:
+      label: Observation date and time
+      description: Include time zone.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Observation location
+      description: Public project location, not a private home or sensitive location.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence URL
+      description: Link to permitted evidence. Do not upload sensitive or unlicensed attachments.
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observed conditions
+      description: Describe what you observed; distinguish it from the source's published progress.
+    validations:
+      required: true
