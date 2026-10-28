@@ -266,7 +266,7 @@ Use locale-prefixed routes so a shared URL preserves language. Every data page h
 - `/{locale}/transparency/procurement` — PhilGEPS notices/awards/contracts and downloadable rows when complete.
 - `/{locale}/transparency/projects` — public project inventory with location, agency, funding and progress evidence; include a structured citizen report path that creates a reviewable issue, never a live status mutation.
 - `/{locale}/statistics/demographics` — source-published census and population tables.
-- `/{locale}/statistics/competitiveness` — DTI CMCI rankings and annual indicators only after direct retrieval.
+- `/{locale}/statistics/competitiveness` — municipal context including PSA search-indexed population and income class and PhilAtlas historical income attributed to BLGF, with verification limits; DTI's five pillars and source link. Publish CMCI rankings and annual indicators only after direct retrieval.
 - `/{locale}/statistics/municipal-income` — BLGF/COA/municipal published finance series.
 - `/{locale}/open-data` — datasets, schemas, CSV/JSON downloads, capture dates, licenses, coverage and hashes.
 - `/{locale}/map` — official boundaries/data where licensed; separate and label any nonofficial context layer.
